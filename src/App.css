@@ -1,0 +1,209 @@
+body {
+  margin: 0px;
+}
+
+.App {
+  background-color: #01161e;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  justify-content: center;
+}
+
+.top-section h2 {
+  margin-top: 0px;
+  color: #eff6e0;
+}
+
+.top-section span {
+  color: #598392;
+  margin-right: 10rem;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.main-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section img {
+  width: 250px;
+  border: 5px solid;
+  border-color: #79c3dd;
+}
+
+.main-section-text h1 {
+  margin-left: 10rem;
+  font-size: 2rem;
+}
+
+.main-section-text-first h1 {
+  color: #eff6e0;
+}
+
+.main-section-text-gradient h1 {
+  color: #797b77;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-stack-section {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  border-top: 2px solid #124559;
+  border-bottom: 2px solid #124559;
+  background-color: #010c11;
+  margin-top: 10rem;
+}
+
+.tech-stack-scroller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  animation: scroll-left 50s linear infinite;
+}
+
+.tech-stack-scroller:hover {
+  animation-play-state: paused;
+}
+
+.tech-stack-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.tech-stack-item img {
+  width: 40px;
+  height: auto;
+}
+
+.tech-stack-item h2 {
+  color: #79a5b5;
+}
+
+.tech-stack-item h2 span {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.about-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.about-section h1 {
+  color: #eff6e0;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-section p {
+  margin-top: 1.5rem;
+  max-width: 800px;
+  color: #b1b2ae;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.experience-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-section-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.experience-section h1 {
+  color: #eff6e0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.experience-duration {
+  width: 450px;
+  color: #aec3b0;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+.experience-company,
+.experience-title {
+  color: #598392;
+  font-size: 1.4rem;
+}
+
+.experience-description {
+  color: #b1b2ae;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.project-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-section-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.project-section h1 {
+  color: #eff6e0;
+  font-size: 2.5rem;
+  text-align: center;
+}
