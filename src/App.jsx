@@ -19,6 +19,10 @@ import solventImage from "./assets/solvent.png";
 import realmQuestImage from "./assets/realmquest.png";
 import portfolioV2Image from "./assets/portfoliov2.png";
 import pixCatImage from "./assets/pix-cat.png";
+import twitterImage from "./assets/twitter.svg";
+import linkedinImage from "./assets/linkedin.svg";
+import emailImage from "./assets/email.svg";
+import githubImage from "./assets/github2.svg";
 
 const techstack = [
   { name: "JAVASCRIPT", icon: javascriptIcon },
@@ -47,6 +51,7 @@ const experience = [
       "Act as the primary strategic liaison between the technical engineering team and the broader club community of 2,000+ members, translating complex Web3 and blockchain technical concepts into accessible content to foster a more inclusive developer ecosystem.",
       "Champion a culture of knowledge sharing by curating comprehensive technical documentation and developer guides, significantly lowering the barrier to entry for students transitioning from Web2 to Web3 development.",
     ],
+    link: "https://www.linkedin.com/company/apu-blockchain-crypto-club-apu-bcc/",
   },
   {
     title: "Event Department Leader",
@@ -59,6 +64,7 @@ const experience = [
       "Cultivated a collaborative team environment by implementing clear communication channels and ownership structures, ensuring the seamless delivery of complex events under tight deadlines",
       "Mentored and guided a dedicated committee of student organizers, fostering their professional growth in project management, event coordination, and technical leadership.",
     ],
+    link: "https://www.linkedin.com/company/apu-blockchain-crypto-club-apu-bcc/",
   },
   {
     title: "Software Support & Implementation (Intern)",
@@ -70,6 +76,7 @@ const experience = [
       "Drove customer satisfaction and contributed to company revenue growth by leveraging deep product knowledge to identify user needs, executing strategic customer outreach, and supporting effective sales initiatives through the sales of Year-End Workshop.",
       "Served as a critical bridge between clients and internal developer teams, translating actual user feedback into actionable insights while maintaining professional communication standards under pressure.",
     ],
+    link: "https://www.linkedin.com/company/info-tech-systems-ltd/",
   },
 ];
 
@@ -107,7 +114,7 @@ const projects = [
     description:
       "I have redesigned my portfolio website using React.js, JavaScript, and CSS to showcase my skills and projects in a more modern and professional way. The new design features a sleek and responsive layout, and smooth animations to enhance the user experience. This project allowed me to improve my web development skills and create a more impressive online presence.",
     image: portfolioV2Image,
-    link: "https://swenfei.vercel.app/",
+    link: "https://wenfei.vercel.app/",
   },
 ];
 
@@ -117,19 +124,31 @@ function App() {
       <div className="App">
         <div className="container">
           <div className="top-section">
-            <h2>
-              Software Engineer <span>/</span>
-            </h2>
+            <a href="#home">
+              <h2>
+                Software Engineer <span>/</span>
+              </h2>
+            </a>
             <div className="navigation-menu">
-              <h2>About</h2>
-              <h2>Tech Stack</h2>
-              <h2>Experience</h2>
-              <h2>Projects</h2>
-              <h2>Contact</h2>
+              <a href="#about">
+                <h2>About</h2>
+              </a>
+              <a href="#tech-stack">
+                <h2>Tech Stack</h2>
+              </a>
+              <a href="#experience">
+                <h2>Experience</h2>
+              </a>
+              <a href="#projects">
+                <h2>Projects</h2>
+              </a>
+              <a href="#contact">
+                <h2>Contact</h2>
+              </a>
             </div>
           </div>
 
-          <div className="main-section">
+          <div className="main-section" id="home">
             <img src={pixCatImage} />
             <div className="main-section-text">
               <div className="main-section-text-first">
@@ -141,7 +160,7 @@ function App() {
             </div>
           </div>
 
-          <div className="tech-stack-section">
+          <div className="tech-stack-section" id="tech-stack">
             <div className="tech-stack-scroller">
               {techstack.map((tech) => (
                 <div className="tech-stack-item" key={tech.name}>
@@ -164,7 +183,7 @@ function App() {
             </div>
           </div>
 
-          <div className="about-section">
+          <div className="about-section" id="about">
             <div className="about-section-content">
               <h1>About.</h1>
               <p>
@@ -188,14 +207,20 @@ function App() {
             </div>
           </div>
 
-          <div className="experience-section">
+          <div className="experience-section" id="experience">
             <div className="experience-section-content">
               <h1>Experience.</h1>
               {experience.map((exp, index) => (
                 <div className="experience-item" key={index}>
                   <h2 className="experience-duration">{exp.duration}</h2>
                   <div className="experience-details">
-                    <h2 className="experience-company">{exp.company}</h2>
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h2 className="experience-company">{exp.company}</h2>
+                    </a>
                     <h2 className="experience-title">{exp.title}</h2>
                     <ul className="experience-description">
                       {exp.description.map((desc, i) => (
@@ -208,7 +233,7 @@ function App() {
             </div>
           </div>
 
-          <div className="project-section">
+          <div className="project-section" id="projects">
             <h1>Projects.</h1>
             <div className="project-section-content">
               {projects.map((project, index) => (
@@ -235,7 +260,63 @@ function App() {
             </div>
           </div>
 
-          <div className="contact-section"></div>
+          <div className="contact-section" id="contact">
+            <div className="contact-section-content">
+              <h1>Contact.</h1>
+              <h2>Connect with me or follow my social media</h2>
+              <div className="contact-section-first-column">
+                <div className="linkedin">
+                  <img src={linkedinImage} alt="Linkedin" />
+                  <h3
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/swenfei/",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Linkedin
+                  </h3>
+                </div>
+                <div className="github">
+                  <img src={githubImage} alt="GitHub" />
+                  <h3
+                    onClick={() =>
+                      window.open("https://github.com/TeddyHuZz", "_blank")
+                    }
+                  >
+                    GitHub
+                  </h3>
+                </div>
+              </div>
+              <div className="contact-section-second-column">
+                <div className="twitter">
+                  <img src={twitterImage} alt="Twitter" />
+                  <h3
+                    onClick={() =>
+                      window.open("https://x.com/TeddyHuZz", "_blank")
+                    }
+                  >
+                    Twitter
+                  </h3>
+                </div>
+                <div className="email">
+                  <img src={emailImage} alt="Email" />
+                  <h3
+                    onClick={() =>
+                      window.open("mailto:swenfei04@gmail.com", "_blank")
+                    }
+                  >
+                    E-mail
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-section">
+            <h2>© 2025 | Wen Fei, Kuala Lumpur</h2>
+          </div>
         </div>
       </div>
     </>

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
 }
@@ -35,12 +39,17 @@ body {
   gap: 4rem;
 }
 
+.top-section a {
+  text-decoration: none;
+}
+
 .main-section {
   margin-top: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  scroll-margin-top: 80px;
 }
 
 .main-section img {
@@ -79,6 +88,7 @@ body {
   border-bottom: 2px solid #124559;
   background-color: #010c11;
   margin-top: 10rem;
+  scroll-margin-top: 80px;
 }
 
 .tech-stack-scroller {
@@ -124,6 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 80px;
 }
 
 .about-section-content {
@@ -153,6 +164,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 80px;
 }
 
 .experience-section-content {
@@ -180,6 +192,10 @@ body {
   margin-right: 1rem;
 }
 
+.experience-details a {
+  text-decoration: none;
+}
+
 .experience-company,
 .experience-title {
   color: #598392;
@@ -199,6 +215,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 80px;
 }
 
 .project-section-content {
@@ -236,4 +253,137 @@ body {
   text-align: justify;
   margin-top: 4rem;
   margin-left: 2rem;
+}
+
+.contact-section {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.contact-section-content {
+  width: 100%;
+}
+
+.contact-section h1 {
+  color: #eff6e0;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-section h2 {
+  color: #b1b2ae;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-section-first-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.contact-section-first-column h3 {
+  color: #b1b2ae;
+  font-size: 1.2rem;
+}
+
+.linkedin {
+  cursor: pointer;
+  background-color: rgb(18, 16, 16);
+  width: 500px;
+  height: 60px;
+  border: 2px solid #1d2021;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.linkedin img {
+  margin-left: 1rem;
+}
+
+.github {
+  cursor: pointer;
+  background-color: rgb(18, 16, 16);
+  width: 500px;
+  height: 60px;
+  border: 2px solid #1d2021;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.github img {
+  margin-left: 1rem;
+}
+
+.contact-section-second-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-section-second-column h3 {
+  color: #b1b2ae;
+  font-size: 1.2rem;
+}
+
+.twitter {
+  cursor: pointer;
+  background-color: rgb(18, 16, 16);
+  width: 500px;
+  height: 60px;
+  border: 2px solid #1d2021;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.twitter img {
+  margin-left: 1rem;
+}
+
+.email {
+  cursor: pointer;
+  background-color: rgb(18, 16, 16);
+  width: 500px;
+  height: 60px;
+  border: 2px solid #1d2021;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.email img {
+  margin-left: 1rem;
+}
+
+.footer-section {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  color: #b1b2ae;
+}
+
+.footer-section h2 {
+  font-weight: 800;
 }
