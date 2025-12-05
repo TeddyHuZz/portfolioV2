@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 
 // Import all your assets
 import javascriptIcon from "./assets/javascript.svg";
@@ -122,6 +123,7 @@ function App() {
   return (
     <>
       <div className="App">
+        <Analytics />
         <div className="container">
           <div className="top-section">
             <a href="#home">
