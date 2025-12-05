@@ -53,6 +53,44 @@ const experience = [
   },
 ];
 
+const projects = [
+  {
+    name: "Portfolio Website Version One",
+    description:
+      "I have designed and developed my first ever portfolio website using React.js, JavaScript, and CSS when I first stepped into the Web Development field. It was a simple static website that showcased my projects, experiences, and skills. This project laid the foundation for my udnderstanding of web development and inspired me to further explore into the field",
+    image: "src/assets/portfoliov1.png",
+    link: "https://swenfei.vercel.app/",
+  },
+  {
+    name: "OWSB System",
+    description:
+      "I have developed the Finance role for the OWSB System as the course work of my university subject using Object-Oriented Programming in Java. The OWSB System is a desktop application that helps businesses to manage their inventory system, sales, and finances. My role was to implement the finance module that handles invoicing, payments, and financial reports.",
+    image: "src/assets/asmjava.png",
+    link: "https://github.com/JNHNG0205/java_asm",
+  },
+  {
+    name: "Solvent | Onchain Gas Tank",
+    description:
+      "Solvet is an onchain gas tank solution that allows developers to manage and pay for the gas fees in a safer way through x402. It is built using Rust for smart contract development and JavaScript for the front-end development. The project aims to provide a seamless experience for developers to interact with blockchain networks without worrying about their wallets getting drain.",
+    image: "src/assets/solvent.png",
+    link: "https://github.com/TeddyHuZz/solvent",
+  },
+  {
+    name: "Realm Quest | DND Board Game",
+    description:
+      "Realm Quest is a DND-inspired hybrid board game that combines both physical and digital elements to create an immersive gaming experience. Players can interact with the physical map with QR codes that link to the digital content with multiplayer mode. The project is built using JavaScript and React.js for the front-end development, Node.js for the back-end development, Supabase for the database, Render and Vercel for the deployment.",
+    image: "src/assets/realmquest.png",
+    link: "https://realmquest.vercel.app/",
+  },
+  {
+    name: "Portfolio Website Version Two",
+    description:
+      "I have redesigned my portfolio website using React.js, JavaScript, and CSS to showcase my skills and projects in a more modern and professional way. The new design features a sleek and responsive layout, and smooth animations to enhance the user experience. This project allowed me to improve my web development skills and create a more impressive online presence.",
+    image: "src/assets/portfoliov2.png",
+    link: "https://swenfei.vercel.app/",
+  },
+];
+
 function App() {
   return (
     <>
@@ -152,8 +190,32 @@ function App() {
 
           <div className="project-section">
             <h1>Projects.</h1>
-            <div className="project-section-content"></div>
+            <div className="project-section-content">
+              {projects.map((project, index) => (
+                <div className="project-item" key={index}>
+                  <div className="project-section-left">
+                    <h2 className="project-name">{project.name}</h2>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.name}
+                        className="project-image"
+                      />
+                    </a>
+                  </div>
+                  <div className="project-section-right">
+                    <p className="project-description">{project.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+
+          <div className="contact-section"></div>
         </div>
       </div>
     </>

@@ -109,6 +109,10 @@ body {
   color: #79a5b5;
 }
 
+.tech-stack-item h2:hover {
+  cursor: default;
+}
+
 .tech-stack-item h2 span {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -202,8 +206,34 @@ body {
   width: 100%;
 }
 
+.project-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
 .project-section h1 {
   color: #eff6e0;
   font-size: 2.5rem;
   text-align: center;
+}
+
+.project-item h2 {
+  color: #598392;
+  font-size: 1.6rem;
+}
+
+.project-item img {
+  width: 400px;
+  height: auto;
+  border: 5px solid #c38080;
+}
+
+.project-description {
+  color: #b1b2ae;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+  margin-top: 4rem;
+  margin-left: 2rem;
 }
