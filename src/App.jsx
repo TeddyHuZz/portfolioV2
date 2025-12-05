@@ -1,18 +1,38 @@
 import "./App.css";
 
+// Import all your assets
+import javascriptIcon from "./assets/javascript.svg";
+import reactIcon from "./assets/react.svg";
+import nodejsIcon from "./assets/nodejs.svg";
+import javaIcon from "./assets/java.svg";
+import pythonIcon from "./assets/python.svg";
+import rustIcon from "./assets/rust.svg";
+import cssIcon from "./assets/css.svg";
+import gitIcon from "./assets/git.svg";
+import figmaIcon from "./assets/figma.svg";
+import githubIcon from "./assets/github.svg";
+import linuxIcon from "./assets/linux.svg";
+import supabaseIcon from "./assets/supabase.png";
+import portfolioV1Image from "./assets/portfoliov1.png";
+import asmJavaImage from "./assets/asmjava.png";
+import solventImage from "./assets/solvent.png";
+import realmQuestImage from "./assets/realmquest.png";
+import portfolioV2Image from "./assets/portfoliov2.png";
+import pixCatImage from "./assets/pix-cat.png";
+
 const techstack = [
-  { name: "JAVASCRIPT", icon: "src/assets/javascript.svg" },
-  { name: "REACT.JS", icon: "src/assets/react.svg" },
-  { name: "NODE.JS", icon: "src/assets/nodejs.svg" },
-  { name: "JAVA", icon: "src/assets/java.svg" },
-  { name: "PYTHON", icon: "src/assets/python.svg" },
-  { name: "RUST", icon: "src/assets/rust.svg" },
-  { name: "CSS", icon: "src/assets/css.svg" },
-  { name: "GIT", icon: "src/assets/git.svg" },
-  { name: "FIGMA", icon: "src/assets/figma.svg" },
-  { name: "GITHUB", icon: "src/assets/github.svg" },
-  { name: "LINUX", icon: "src/assets/linux.svg" },
-  { name: "SUPABASE", icon: "src/assets/supabase.png" },
+  { name: "JAVASCRIPT", icon: javascriptIcon },
+  { name: "REACT.JS", icon: reactIcon },
+  { name: "NODE.JS", icon: nodejsIcon },
+  { name: "JAVA", icon: javaIcon },
+  { name: "PYTHON", icon: pythonIcon },
+  { name: "RUST", icon: rustIcon },
+  { name: "CSS", icon: cssIcon },
+  { name: "GIT", icon: gitIcon },
+  { name: "FIGMA", icon: figmaIcon },
+  { name: "GITHUB", icon: githubIcon },
+  { name: "LINUX", icon: linuxIcon },
+  { name: "SUPABASE", icon: supabaseIcon },
 ];
 
 const experience = [
@@ -58,35 +78,35 @@ const projects = [
     name: "Portfolio Website Version One",
     description:
       "I have designed and developed my first ever portfolio website using React.js, JavaScript, and CSS when I first stepped into the Web Development field. It was a simple static website that showcased my projects, experiences, and skills. This project laid the foundation for my udnderstanding of web development and inspired me to further explore into the field",
-    image: "src/assets/portfoliov1.png",
+    image: portfolioV1Image,
     link: "https://swenfei.vercel.app/",
   },
   {
     name: "OWSB System",
     description:
       "I have developed the Finance role for the OWSB System as the course work of my university subject using Object-Oriented Programming in Java. The OWSB System is a desktop application that helps businesses to manage their inventory system, sales, and finances. My role was to implement the finance module that handles invoicing, payments, and financial reports.",
-    image: "src/assets/asmjava.png",
+    image: asmJavaImage,
     link: "https://github.com/JNHNG0205/java_asm",
   },
   {
     name: "Solvent | Onchain Gas Tank",
     description:
       "Solvet is an onchain gas tank solution that allows developers to manage and pay for the gas fees in a safer way through x402. It is built using Rust for smart contract development and JavaScript for the front-end development. The project aims to provide a seamless experience for developers to interact with blockchain networks without worrying about their wallets getting drain.",
-    image: "src/assets/solvent.png",
+    image: solventImage,
     link: "https://github.com/TeddyHuZz/solvent",
   },
   {
     name: "Realm Quest | DND Board Game",
     description:
       "Realm Quest is a DND-inspired hybrid board game that combines both physical and digital elements to create an immersive gaming experience. Players can interact with the physical map with QR codes that link to the digital content with multiplayer mode. The project is built using JavaScript and React.js for the front-end development, Node.js for the back-end development, Supabase for the database, Render and Vercel for the deployment.",
-    image: "src/assets/realmquest.png",
+    image: realmQuestImage,
     link: "https://realmquest.vercel.app/",
   },
   {
     name: "Portfolio Website Version Two",
     description:
       "I have redesigned my portfolio website using React.js, JavaScript, and CSS to showcase my skills and projects in a more modern and professional way. The new design features a sleek and responsive layout, and smooth animations to enhance the user experience. This project allowed me to improve my web development skills and create a more impressive online presence.",
-    image: "src/assets/portfoliov2.png",
+    image: portfolioV2Image,
     link: "https://swenfei.vercel.app/",
   },
 ];
@@ -110,7 +130,7 @@ function App() {
           </div>
 
           <div className="main-section">
-            <img src="src/assets/pix-cat.png" />
+            <img src={pixCatImage} />
             <div className="main-section-text">
               <div className="main-section-text-first">
                 <h1>Hi, I am Wen Fei.</h1>
