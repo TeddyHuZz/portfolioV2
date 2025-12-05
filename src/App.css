@@ -387,3 +387,112 @@ body {
 .footer-section h2 {
   font-weight: 800;
 }
+
+@media (max-width: 768px) {
+  .top-section {
+    display: none;
+  }
+
+  .top-section h2 {
+    display: none;
+  }
+
+  .top-section span {
+    display: none;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .main-section {
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .main-section-text h1 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .about-section-content p {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .experience-section,
+  .experience-section-content,
+  .experience-item {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .experience-duration {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+
+  .experience-company,
+  .experience-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-description {
+    font-size: 1rem;
+  }
+
+  .project-section,
+  .project-section-content,
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item img {
+    width: 90vw;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-description {
+    margin: 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-section-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-section-first-column,
+  .contact-section-second-column {
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkedin,
+  .github,
+  .twitter,
+  .email {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-section h2 {
+    font-size: 1rem;
+  }
+}
